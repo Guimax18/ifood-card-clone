@@ -1,0 +1,94 @@
+
+@font-face {
+    font-family: 'ifood-bold';
+    src: url('/static/fonts/iFoodRCTextos-Bold.eot');
+    src: local('iFood RC Textos Bold'), local('iFoodRCTextos-Bold'),
+        url('/static/fonts/iFoodRCTextos-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/static/fonts/iFoodRCTextos-Bold.woff2') format('woff2'),
+        url('/static/fonts/iFoodRCTextos-Bold.woff') format('woff'),
+        url('/static/fonts/iFoodRCTextos-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ifood-regular';
+    src: url('/static/fonts/iFoodRCTextos-Regular.eot');
+    src: local('iFood RC Textos'), local('iFoodRCTextos-Regular'),
+        url('/static/fonts/iFoodRCTextos-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/static/fonts/iFoodRCTextos-Regular.woff2') format('woff2'),
+        url('/static/fonts/iFoodRCTextos-Regular.woff') format('woff'),
+        url('/static/fonts/iFoodRCTextos-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+body{
+    font-family: 'ifood-bold', Times, serif;
+    margin: 0;
+    background: rgb(255,255,255);
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    margin: 0;
+
+    img{
+    width: 8vw;
+    margin-left: 25px;
+    float: left; /* Coloca a imagem à esquerda */
+    overflow-clip-margin: content-box;
+    }
+    h1{
+    font-family: 'ifood-regular', Times, serif;
+    width: 95%; /* Ajuste o valor de largura */
+    font-size: 16px;
+    color: #525252;
+    text-align: right;
+    margin-top: 35px;
+    }
+}
+
+
+.position-img{
+    position: relative;
+    .bg{
+        margin: 0px;
+        position: absolute;
+        z-index: 1;
+        width: auto;
+    }
+
+    .mulher{
+        max-width: 1050px;
+        min-width: 250px;
+        position:absolute;
+        right: -250px;
+        z-index: 2;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+    @media only screen and (max-width: 950px){ 
+        header {
+            margin-top: 25px;
+            img{
+                width: 120px;
+                margin-left: 138px;
+            }
+            h1{
+                display: none;
+            }
+        }
+    }
