@@ -24,54 +24,73 @@
     font-style: normal;
     font-display: swap;
 }
+
+:root{
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+}
+
 body{
     font-family: 'ifood-bold', Times, serif;
     margin: 0;
-    background: rgb(255,255,255);
+    padding: 0;
+    overflow-x: hidden;
 }
 
 header{
-    width: 100%;
-    height: 50px;
-    margin-bottom: 20px;
-    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: #525252 solid;
 
-    img{
+    .logo-ifood{
     width: 8vw;
-    margin-left: 25px;
-    float: left; /* Coloca a imagem à esquerda */
-    overflow-clip-margin: content-box;
+    margin: 20px;
+
+
     }
     h1{
     font-family: 'ifood-regular', Times, serif;
-    width: 95%; /* Ajuste o valor de largura */
     font-size: 16px;
     color: #525252;
-    text-align: right;
-    margin-top: 35px;
+    margin: 20px;
     }
 }
 
+.principal{
+    background-image: url(/static/imagens/background.svg);
+    background-repeat: no-repeat;
+    background-size:auto;
+}
 
-.position-img{
-    position: relative;
-    .bg{
-        margin: 0px;
-        position: absolute;
-        z-index: 1;
-        width: auto;
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    
+    .t1{
+        font-size: 39px;
+        align-items: center;
     }
 
-    .mulher{
-        max-width: 1050px;
-        min-width: 250px;
-        position:absolute;
-        right: -250px;
-        z-index: 2;
-        }
+    .t2{
+        font-size: 39px;
     }
 
+    h3{
+        font-size: 29px;
+    }
 
+    p{
+        font-size: 20px;
+    }
+
+    img{
+        width: 1000px;
+        height: 700px;
+        
+    }
+}
 
 
 
